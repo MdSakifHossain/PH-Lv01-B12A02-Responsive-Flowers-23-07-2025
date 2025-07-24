@@ -6,25 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faugei Flower Shop</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-text: rgba(37, 36, 50, 1);
+            --color-subtitle: rgba(137, 135, 161, 1);
+
+            --font-base: "Inter", sans-serif;
+            --font-display: "Noto Serif", serif;
+          }
+        </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-    <header>
-        <nav>
-            <img src="./assets/logo.png" alt="Logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About us</a></li>
+<body class="pb-3.5 font-base text-color">
+    <!-- header -->
+    <header class="flex items-center justify-between px-4 lg:px-[9.375rem]">
+        <img class="w-16 lg:w-[136px]" src="./assets/logo.png" alt="Logo" />
+        <nav class="">
+            <ul class="flex items-center justify-between gap-12">
+                <li><a href="#" class="hidden font-bold lg:block lg:text-base lg:leading-6">Home</a></li>
+                <li><a href="#" class="hidden text-subtitle lg:block lg:text-base lg:leading-6">Shop</a></li>
+                <li><a href="#" class="hidden text-subtitle lg:block lg:text-base lg:leading-6">About us</a></li>
+                <li><a href="#" class="flex items-center justify-between gap-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-cart" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                        </svg>
+                        <span class="text-base leading-6">
+                            Cart ($56)
+                        </span>
+                    </a>
+                </li>
             </ul>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                </svg>
-                Cart ($56)
-            </a>
         </nav>
     </header>
 </body>
