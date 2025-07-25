@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="pb-3.5 font-base text-color">
+<body class="font-base text-color">
     <!-- header -->
     <header class="flex items-center justify-between px-base-bd-pad pt-3.5 lg:px-lg-bd-pad">
         <img class="w-16 lg:w-[136px]" src="./assets/logo.png" alt="Logo" />
@@ -255,7 +255,7 @@
                 </div>
 
                 <div
-                    class="relative bg-[url(./assets/deal-zabo.png)] bg-no-repeat bg-cover py-16 flex justify-center items-center rounded-2xl col-span-2 row-span-2">
+                    class="relative bg-[url(./assets/deal-zabo.png)] bg-no-repeat bg-cover py-16 flex justify-center items-center rounded-2xl lg:col-span-2 lg:row-span-2">
                     <div class="absolute inset-0 backdrop-brightness-50 rounded-2xl"></div>
                     <div class="relative z-10 flex flex-col gap-3.5 items-center">
                         <p class="font-display font-bold text-[1.25rem] lg:text-[2.5rem]">
@@ -270,6 +270,22 @@
             </div>
         </section>
     </main>
+
+    <footer class="w-full">
+        <!-- newsletter -->
+        <section class="bg-[url(./assets/news-letter-bg.png)] pt-28 pb-16 flex justify-center">
+            <div class="w-10/12 flex flex-col items-center gap-6 lg:w-8/12">
+                <h2 class="font-display font-bold text-xl text-white lg:text-[3.125rem]">Join the colorful Bunch</h2>
+                <form class="w-full flex">
+                    <input class="px-5 py-2 bg-white grow" type="email" placeholder="Write email" />
+                    <input class="px-5 py-2 bg-brand text-white font-semibold lg:px-12" type="submit"
+                        value="Subscribe" />
+                </form>
+            </div>
+        </section>
+
+        <!--  -->
+    </footer>
 </body>
 
 </html>
